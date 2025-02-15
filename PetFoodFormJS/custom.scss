@@ -1,0 +1,33 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+body {
+  background-color: rgb(217, 219, 219);
+}
+
+.container-xxl {
+  background-color: rgb(131, 214, 214);
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgb(88, 88, 88);
+  padding: 5px;
+}
+
+.container-xxl h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-xxl form fieldset {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(184, 178, 178);
+  border-radius: 30px;
+  margin: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
