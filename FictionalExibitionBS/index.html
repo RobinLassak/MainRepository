@@ -1,1 +1,512 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lassak-FictionalExibition</title>
+    <link rel="stylesheet" href="scss/custome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Navbar-->
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#Home">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#Popis">O nás</a>
+                <a class="nav-link active" href="#Galerie">Galerie</a>
+                <a class="nav-link active" href="#Ohlasy">Ohlasy</a>
+                <a class="nav-link active" href="#Kontakty">Kontakty</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
 
+      <!-- Home Section -->
+      <section id="Home">
+        <div class="overlay">
+          <div class="content text-center">
+            <!--Hlavni Nadpis-->
+            <h1 class="text-uppercase display-1 text-white">
+              Výstava obrazů A.Muchy
+            </h1>
+            <p class="d-none d-md-block text-white">Výstaviště Ostrava</p>
+
+            <!--Tlacitka-->
+            <div class="buttons">
+              <button
+                type="button"
+                class="btn btn-secondary me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Rezervace vstupenek
+              </button>
+              <a
+                class="btn btn-secondary"
+                href="https://cs.wikipedia.org/wiki/Alfons_Mucha"
+                role="button"
+                >Odkaz</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Rezervace vstupenek
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Formulář -->
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="col-form-label">Jméno:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="col-form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputtel" class="col-form-label">Telefon:</label>
+                <input type="tel" class="form-control" id="inputtel" required />
+              </div>
+              <div class="mb-3">
+                <label for="inputNumber" class="col-form-label"
+                  >Počet Vstupenek:</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputNumber"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputDate" class="col-form-label">Datum:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="inputDate"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Zavřít
+            </button>
+            <button type="button" class="btn btn-primary">Objednat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!--2.Sekce - O nas-->
+      <section id="Popis">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">O nás</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <!-- První box -->
+            <div class="col-12 col-md-4">
+              <div class="d-none d-md-block">
+                <img
+                  src="Grafika/Technika.jpg"
+                  class="img-fluid"
+                  alt="Technika"
+                  style="height: 300px; object-fit: cover; width: 100%"
+                />
+              </div>
+              <h2 class="pb-1 text-center">Technika</h2>
+              <div class="row g-4 py-2">
+                <p class="text-center" id="Roboto">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, sapiente. At, veritatis? Quasi at, facilis
+                  temporibus aperiam ratione recusandae blanditiis ullam officia
+                  enim quia doloribus. Repellendus repellat alias voluptas quam
+                  sint sit ipsam perferendis voluptatum. Ea, aliquam. Iusto
+                  consequuntur expedita earum. Maxime nam debitis labore quaerat
+                  saepe vitae itaque assumenda optio officia. Possimus explicabo
+                  in deleniti eligendi consectetur molestiae at officia dicta
+                  debitis perferendis necessitatibus adipisci totam obcaecati
+                  laboriosam alias voluptatem doloremque tempore vero accusamus
+                  soluta culpa, ipsam veniam! Veritatis maxime laborum odio
+                  fugit cumque ipsum, adipisci, ut, inventore suscipit molestiae
+                  tempora aut nisi sunt ex. Blanditiis quaerat totam quis.
+                </p>
+              </div>
+            </div>
+            <!-- Druhý box -->
+            <div class="col-12 col-md-4">
+              <div class="d-none d-md-block">
+                <img
+                  src="Grafika/Umeni.jpg"
+                  class="img-fluid"
+                  alt="Vyrivka"
+                  style="height: 300px; object-fit: cover; width: 100%"
+                />
+              </div>
+              <h2 class="pb-1 text-center">Lorem ipsum</h2>
+              <div class="row g-4 py-2">
+                <p class="text-center" id="Lato">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, sapiente. At, veritatis? Quasi at, facilis
+                  temporibus aperiam ratione recusandae blanditiis ullam officia
+                  enim quia doloribus. Repellendus repellat alias voluptas quam
+                  sint sit ipsam perferendis voluptatum. Ea, aliquam. Iusto
+                  consequuntur expedita earum. Maxime nam debitis labore quaerat
+                  saepe vitae itaque assumenda optio officia. Possimus explicabo
+                  in deleniti eligendi consectetur molestiae at officia dicta
+                  debitis perferendis necessitatibus adipisci totam obcaecati
+                  laboriosam alias voluptatem doloremque tempore vero accusamus
+                  soluta culpa, ipsam veniam! Veritatis maxime laborum odio
+                  fugit cumque ipsum, adipisci, ut, inventore suscipit molestiae
+                  tempora aut nisi sunt ex. Blanditiis quaerat totam quis.
+                </p>
+              </div>
+            </div>
+
+            <!-- Třetí box -->
+            <div class="col-12 col-md-4">
+              <div class="d-none d-md-block">
+                <img
+                  src="Grafika/Priroda.jpg"
+                  class="img-fluid"
+                  alt="Priroda"
+                  style="height: 300px; object-fit: cover; width: 100%"
+                />
+              </div>
+              <h2 class="pb-1 text-center">Priroda</h2>
+              <div class="row g-4 py-2">
+                <p class="text-center" id="Work_Sans">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Perspiciatis, sapiente. At, veritatis? Quasi at, facilis
+                  temporibus aperiam ratione recusandae blanditiis ullam officia
+                  enim quia doloribus. Repellendus repellat alias voluptas quam
+                  sint sit ipsam perferendis voluptatum. Ea, aliquam. Iusto
+                  consequuntur expedita earum. Maxime nam debitis labore quaerat
+                  saepe vitae itaque assumenda optio officia. Possimus explicabo
+                  in deleniti eligendi consectetur molestiae at officia dicta
+                  debitis perferendis necessitatibus adipisci totam obcaecati
+                  laboriosam alias voluptatem doloremque tempore vero accusamus
+                  soluta culpa, ipsam veniam! Veritatis maxime laborum odio
+                  fugit cumque ipsum, adipisci, ut, inventore suscipit molestiae
+                  tempora aut nisi sunt ex. Blanditiis quaerat totam quis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--3.Sekce - Galerie-->
+      <section id="Galerie">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Galerie</h2>
+          <div class="row g-4 py-5 row-cols-1">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              style="box-sizing: max-width"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="Grafika/Priroda.jpg"
+                    class="d-block w-100"
+                    alt="Priroda"
+                    style="height: 800px; object-fit: cover; width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Grafika/Technika.jpg"
+                    class="d-block w-100"
+                    alt="Technika"
+                    style="height: 800px; object-fit: cover; width: 100%"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Grafika/Umeni.jpg"
+                    class="d-block w-100"
+                    alt="Umeni"
+                    style="height: 800px; object-fit: cover; width: 100%"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--4.Sekce - Ohlasy-->
+      <section id="Ohlasy">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Ohlasy</h2>
+          <div class="row g-4 py-5 justify-content-center">
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch p-3"
+            >
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quos voluptates maxime doloremque dolor quae? Ex ea
+                    voluptates ipsum blanditiis Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Repellat laboriosam tempore
+                    repudiandae architecto id atque nam eveniet tenetur
+                    consectetur explicabo nesciunt laborum unde commodi veniam
+                    expedita tempora, numquam, amet nostrum!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch p-3"
+            >
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Qui doloremque praesentium modi aliquam optio, quo voluptate
+                    nostrum repellendus esse cumque quia, reprehenderit veniam
+                    libero, corrupti voluptatum eligendi iste saepe quas neque!
+                    Dolorum quidem dicta laudantium maxime ipsum consequatur
+                    molestiae beatae.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch p-3"
+            >
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate, quae. Ducimus optio saepe nostrum corporis dicta
+                    possimus autem ex distinctio non culpa sed impedit, quas,
+                    id, omnis ad magnam laborum quia. Magnam necessitatibus
+                    commodi ipsam blanditiis ducimus ut at ea ex in nostrum
+                    veritatis, sunt saepe sit libero iste adipisci?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-stretch p-3"
+            >
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum tenetur, non assumenda officiis cum at nisi amet
+                    iusto debitis perferendis sed sapiente velit nihil veniam
+                    quod, enim delectus natus quaerat? Veritatis reprehenderit
+                    nulla culpa? Omnis pariatur facere aliquid delectus quasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--5.Sekce - Formular-->
+      <section id="Formular">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Kontaktni Formular</h2>
+          <div class="row g-4 py-5 row-cols-1">
+            <div class="col-12">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Jmeno</label
+                  >
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="inputName"
+                    name="name"
+                    required
+                    placeholder="Zadejte své jméno"
+                  />
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    name="email"
+                    required
+                    placeholder="Zadejte svůj email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Zpráva</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="inputMessage"
+                    rows="3"
+                    name="message"
+                    required
+                    placeholder="Zadejte svou zprávu"
+                  ></textarea>
+                </div>
+                <div class="col-auto mt-3">
+                  <button type="submit" class="btn btn-secondary mb-3">
+                    Odeslat
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--7.Sekce - Kontakty-->
+      <section id="Kontakty">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Kontakty</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col">
+              <div class="box">
+                <p>
+                  <strong><big>Vystaviste Ostrava s.r.o.</big></strong>
+                </p>
+                <p><strong>Adresa:</strong> Dolní 995/4, Ostrava</p>
+                <p><strong>Telefon:</strong> +420 123 456 789</p>
+                <p><strong>Email:</strong> info@vystaviste.cz</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="box">
+                <i class="bi bi-facebook"></i>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100057398922594"
+                  >Facebook</a
+                >
+                <br />
+                <br />
+                <i class="bi bi-twitter"></i>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100057398922594"
+                  >Twitter</a
+                >
+                <br />
+                <br />
+                <i class="bi bi-tiktok"></i>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100057398922594"
+                  >TikTok</a
+                >
+                <br />
+                <br />
+                <i class="bi bi-instagram"></i>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100057398922594"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+            <!--6.Sekce - Mapa-->
+            <div class="col">
+              <div class="box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2163.5231171726905!2d18.30806482872947!3d49.84476703227523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1728285523403!5m2!1scs!2scz"
+                  width="400"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

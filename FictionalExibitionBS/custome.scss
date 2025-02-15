@@ -1,0 +1,57 @@
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Then add additional custom code here
+
+body {
+  font-family: sans-serif;
+}
+
+#Home {
+  background-image: url("../Grafika/pexels-gabby-k-5302905.jpg");
+  height: 100vh; /* Pozadí zabírá celou výšku okna */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Poloprůhledný překryvný efekt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home .content {
+  color: white;
+  text-align: center;
+}
+
+#Home .buttons {
+  margin-top: 20px;
+}
+
+#Roboto {
+  font-family: "Roboto";
+}
+
+#Lato {
+  font-family: "Lato";
+}
+
+#Work_Sans {
+  font-family: "Work Sans";
+}
