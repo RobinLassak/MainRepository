@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="./scss/custom.css" />
+  </head>
+  <body>
+    <div class="gameTable">
+      <div class="header">
+        <div class="row justify-content-between">
+          <div class="col">
+            <button type="button" class="btn btn-secondary btn-lg again">
+              Again!
+            </button>
+          </div>
+          <div class="col text-end"><span>Between 1 and 20</span></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="row justify-content-center align-items-center">
+          <div class="col text-center">
+            <div class="row"><h1>Guess my Number!</h1></div>
+            <div class="row">
+              <h1><span class="secretNumberPlace">?</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="row">
+          <!-- Levý container -->
+          <div
+            class="col-md-6 d-flex justify-content-start justify-content-md-end"
+          >
+            <div class="container checkingContainer">
+              <div class="row">
+                <input type="number" class="form-control playerNumber" />
+              </div>
+              <div class="row">
+                <button type="button" class="btn btn-secondary btn-lg check">
+                  Check!
+                </button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Pravý container -->
+          <div
+            class="col-md-6 d-flex justify-content-end justify-content-md-start"
+          >
+            <div class="container scoreTable">
+              <div class="row">
+                <h2><span class="changeText">Start guessing...</span></h2>
+              </div>
+              <div class="row">
+                <h2>Score: <span class="scorePlace">20</span></h2>
+              </div>
+              <div class="row">
+                <h2>Highscore: <span class="highscorePlace"></span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
