@@ -6,7 +6,7 @@ function Rybicky({ data, smazatRybu, pridatRybu }) {
   const [novaRyba, setNovaRyba] = useState({
     id: data.length > 0 ? Math.max(...data.map((ryba) => ryba.id)) + 1 : 1,
     name: "",
-    size: "",
+    size: "mala",
   });
   const [validaceNove, setValidaceNove] = useState(false);
 
